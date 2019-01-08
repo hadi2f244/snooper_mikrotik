@@ -31,4 +31,4 @@ user ssh-keys import public-key-file=id_rsa.pub user=[device username(default: a
   output : 
   
   
-  ![](https) 
+  ![](https://github.com/hadi2f244/snooper_mikrotik/blob/master/output.png) 
