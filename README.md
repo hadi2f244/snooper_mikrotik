@@ -32,3 +32,7 @@ user ssh-keys import public-key-file=id_rsa.pub user=[device username(default: a
   
   
   ![](https://github.com/hadi2f244/snooper_mikrotik/blob/master/output.png) 
+
+### Problems!:
+1. I think ssh connection will leave opened if you close python app. So there's a exit_handler function in py file that must close the ssh connection. 
+2. I developed this code to demonstrate RSS values. But i think, Snooper in ROS doesn't work well. When I get close my phone to mikrotik router(sometimes -60dbm) or leave it far from the router(sometimes -50dbm), Its variations aren't related to distance between the phone and the router!
