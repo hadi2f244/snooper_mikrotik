@@ -20,7 +20,7 @@ ftp <mikrotik device ip> [use your device username & password]
   put id_rsa.pub
   exit
 ```  
-3.Run this command in the terminal(In you mikrotik device):
+3.Run this command in the terminal(In terminal):
 ```
 user ssh-keys import public-key-file=id_rsa.pub user=[device username(default: admin)]
 ```
