@@ -24,8 +24,8 @@ ftp <mikrotik device ip> [use your device username & password]
 ```
 user ssh-keys import public-key-file=id_rsa.pub user=[device username(default: admin)]
 ```
-4.Now ssh to mikrotik device(At the first time you need to allow devices to connect[type yes and enter!])
-  type quit to if you want to exit.
+4.Now ssh to mikrotik device(At the first time you need to allow devices to connect[type ‘yes’ and press enter!])
+  type ‘quit’ if you want to exit.
 5.Run main.py file.
 
   output : 
