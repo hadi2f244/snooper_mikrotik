@@ -1,9 +1,9 @@
 # Snooper_Mikrotik
-A simple code that ssh to RouterOS and get snooper data
+A simple code that ssh to RouterOS and get snooper tool data result
 
 **Keywords**: Mikrotik, Snooper, SSH
 
-Snooper is a nice tool for wireless interfaces in Mikrotik RoutersOS. You can monitor all of traffics(devices) that are in mikrotik device neighborhood.
+Snooper is a nice tool of wireless interfaces in Mikrotik RoutersOS. You can monitor all of the traffics(devices) that are in mikrotik device neighborhood.
 
 ## 1\.Requirments:
   A Mikrotik device that has wireless interface (like RB951 series) & a linux pc
@@ -24,7 +24,7 @@ ftp <mikrotik device ip> [use your device username & password]
 ```
 user ssh-keys import public-key-file=id_rsa.pub user=[device username(default: admin)]
 ```
-4.Now ssh to mikrotik device(first time you need to allow devices to connect[type yes and enter!])
+4.Now ssh to mikrotik device(At the first time you need to allow devices to connect[type yes and enter!])
   type quit to if you want to exit.
 5.Run main.py file.
 
@@ -34,5 +34,5 @@ user ssh-keys import public-key-file=id_rsa.pub user=[device username(default: a
   ![](https://github.com/hadi2f244/snooper_mikrotik/blob/master/output.png) 
 
 ### Problems!:
-1. I think ssh connection will leave opened if you close python app. So there's a exit_handler function in py file that must close the ssh connection. 
-2. I developed this code to demonstrate RSS values. But i think, Snooper in ROS doesn't work well. When I get close my phone to mikrotik router(sometimes -60dbm) or leave it far from the router(sometimes -50dbm), Its variations aren't related to distance between the phone and the router!
+1. I think ssh connection will leave opened if you close python app. So there's an exit_handler function in py file that should be developed to close the ssh connection. 
+2. I developed this code to demonstrate RSS values. But I think, Snooping in ROS doesn't work well. When I get my phone close to the router, result shows that RSS is about -60dbm or when I leave my phone far from the router the RSS is about -50 dbm. Thus, Its variations aren't related to the distance between the phone and the router! Moreover, I think there’s a time gap between the snooper results and the real condition!
